@@ -1,0 +1,22 @@
+{
+  "name": "cafe24-aispace",
+  "version": "1.0.0",
+  "description": "Cafe24 AI SPACE - Deploy and manage web apps through conversation. Supports PHP, Node.js, Python, and static sites with MySQL/PostgreSQL/Redis.",
+  "author": {
+    "name": "Cafe24",
+    "url": "https://aispace.cafe24.com"
+  },
+  "homepage": "https://aispace.cafe24.com",
+  "repository": "https://github.com/cafe24-com/claude-plugin-aispace",
+  "license": "MIT",
+  "keywords": [
+    "cafe24",
+    "aispace",
+    "deploy",
+    "hosting",
+    "web",
+    "mcp",
+    "cloud",
+    "webhosting"
+  ]
+}
