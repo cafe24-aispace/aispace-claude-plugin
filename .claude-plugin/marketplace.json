@@ -1,17 +1,16 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "cafe24-aispace-plugins",
+  "description": "Cafe24 AI SPACE official plugins",
+  "version": "1.0.0",
   "owner": {
     "name": "Cafe24",
     "email": "aispace@cafe24corp.com"
   },
-  "metadata": {
-    "description": "Cafe24 AI SPACE 공식 플러그인",
-    "version": "1.0.0"
-  },
   "plugins": [
     {
       "name": "cafe24-aispace",
-      "source": ".",
+      "source": "./",
       "description": "Deploy and manage web apps on Cafe24 AI SPACE through conversation",
       "version": "1.0.0",
       "author": { "name": "Cafe24" },
