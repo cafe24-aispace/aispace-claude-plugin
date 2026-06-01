@@ -10,18 +10,52 @@ Cafe24 AI SPACE를 Claude Code에서 대화만으로 사용할 수 있는 플러
 - **백업**: 소스 코드 + DB 데이터 백업 및 다운로드
 - **GitHub 연동**: 외부 저장소를 연결하여 배포
 
-## 설치
+## 설치 방법
 
-### 공식 마켓플레이스 (등록 후)
+Claude Code 터미널에서 아래 명령을 순서대로 입력하세요.
 
-```bash
-claude plugin install cafe24-aispace
+### Step 1. 마켓플레이스 등록
+
+```
+/plugin marketplace add cafe24-aispace/aispace-claude-plugin
 ```
 
-### 로컬 테스트
+### Step 2. 플러그인 설치
 
-```bash
-claude --plugin-dir ./cafe24-aispace
+```
+/plugin install cafe24-aispace
+```
+
+설치 범위를 묻는 화면이 나타나면 **Install for you (user scope)** 를 선택합니다.
+
+### Step 3. Claude Code 재시작
+
+```
+exit
+claude
+```
+
+플러그인의 MCP 서버를 로드하려면 Claude Code를 재시작해야 합니다.
+
+### Step 4. Cafe24 계정 연결 (최초 1회)
+
+```
+/mcp
+```
+
+1. `/mcp` 입력 후 서버 목록에서 **cafe24-aispace** 를 선택합니다.
+2. **Authenticate** 를 선택하면 브라우저에서 Cafe24 로그인 화면이 열립니다.
+3. AI SPACE를 신청한 계정으로 로그인하면 연결 완료됩니다.
+
+> ⚠️ **이 단계는 필수입니다.** 플러그인 설치만으로는 인증이 자동으로 진행되지 않습니다.
+> `/mcp`에서 수동으로 인증을 한 번 진행해야 합니다. 이후에는 토큰이 자동 갱신됩니다.
+
+### Step 5. 사용 시작
+
+인증이 완료되면 대화에서 바로 사용할 수 있습니다.
+
+```
+내 프로젝트 목록 보여줘
 ```
 
 ## 사전 준비
@@ -56,10 +90,6 @@ my-blog 백업해줘
 
 - PHP 8.2, Node.js 20, Python 3.11, Static (HTML/CSS/JS)
 - DB: MySQL, PostgreSQL, SQLite, Redis, Memcached
-
-## 인증
-
-OAuth 2.0 기반 카페24 계정 인증을 사용합니다. 처음 도구 호출 시 브라우저에서 카페24 로그인만 하면 되며, 이후 토큰 갱신은 자동으로 처리됩니다.
 
 ## 라이선스
 
