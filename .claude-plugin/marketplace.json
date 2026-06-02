@@ -1,7 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/claude-plugin-marketplace.json",
   "name": "cafe24-aispace-marketplace",
-  "displayName": "Cafe24 AI Space Marketplace",
   "description": "Cafe24 AI Space official plugins — deploy, manage, and monitor web projects from Claude Code.",
   "version": "1.1.0",
   "owner": {
@@ -12,7 +11,6 @@
   "plugins": [
     {
       "name": "cafe24-aispace",
-      "displayName": "Cafe24 AI Space",
       "description": "Deploy and manage web projects on Cafe24 AI Space from Claude Code (OAuth 2.0, no API keys).",
       "source": "./",
       "version": "1.1.0",
